@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+<h1 class="text-center">Boggle board</h1>
+<section id="boggle" class="container">
+  <table class="board">
+    <tbody>
+      {% for row in board %}
+      <tr>
+        {% for cell in row%}
+        <td>{{ cell }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}
