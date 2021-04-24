@@ -10,9 +10,16 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/static/boggle.css" />
     <title>Boggle</title>
   </head>
   <body>
     {%block content%} {% endblock %}
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios@0.19.0/dist/axios.js"></script>
+    <script src="/static/boggle.js"></script>
+    <script>
+      let game = new BoggleGame("boggle", 60);
+    </script>
   </body>
 </html>
