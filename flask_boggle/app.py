@@ -21,7 +21,7 @@ def boggle_page():
 
 @app.route('/check-word')
 def check_word():
-    word  = request.args('word')
+    word  = request.args['word']
     board = session['board']
     response = boggle_game.check_valid_word(board,word)
 
